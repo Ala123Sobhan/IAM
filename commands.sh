@@ -7,3 +7,4 @@ get role - aws iam get-role --role-name MyRole
 aws cloudformation describe-stacks --stack-name myrole101
 
 aws iam simulate-principal-policy --policy-source-arn arn:aws:iam::YOUR_ACCOUNT_ID:role/Role1 --action-names "iam:CreateRole" "iam:ListRoles" "iam:SimulatePrincipalPolicy" "ec2:DescribeImages" "ec2:RunInstances" "ec2:DescribeSecurityGroups"
+aws sts assume-role --role-arn arn:aws:iam::199055471403:role/MyRole301 --role-session-name tp
