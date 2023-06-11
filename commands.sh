@@ -15,3 +15,6 @@ aws s3 cp local_file.txt s3://bucket_name/path/to/destination_file.txt
 aws s3api create-bucket --bucket hobena --region us-west-2
 aws configure list-profiles
 
+aws s3 ls s3://your-bucket-name
+
+
