@@ -1,22 +1,21 @@
 Resources:
-  MyIAMRole301:
+  MyIAMRole302:
     Type: AWS::IAM::Role
     Properties:
-      RoleName: MyRole301
+      RoleName: MyRole302
       AssumeRolePolicyDocument:
         Version: "2012-10-17"
         Statement:
           - Effect: Allow
             Principal:
-              AWS: arn:aws:iam::199055471403:user/ala123sobhan
+              AWS: arn:aws:iam::199055471403:user/ala
             Action: sts:AssumeRole
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/ReadOnlyAccess
-        
 
 Outputs:
   myrole101:
-    Value: !GetAtt MyIAMRole301.Arn
+    Value: !GetAtt MyIAMRole302.Arn
 # aws cloudformation validate-template --template-body file://IAM_ROLE_3.1.1.yaml
 # aws cloudformation create-change-set --stack-name myrole101 --change-set-name first-change-set101 --change-set-type UPDATE --template-body file://IAM_ROLE_3.1.2_custompolicy.yaml --capabilities CAPABILITY_NAMED_IAM
 # aws cloudformation create-stack --stack-name myrole101 --template-body file://IAM_ROLE_3.1.1.yaml --capabilities CAPABILITY_NAMED_IAM

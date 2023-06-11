@@ -8,3 +8,12 @@ compared to inline policies.
 AWS managed policies are predefined by AWS and are shared 
 across accounts, offering commonly needed permissions without
 the need for customization.
+
+If a user has administrative permissions and then assumes an AWS read-only role,
+the user's permissions will still be based on their original administrative permissions.
+Assuming a read-only role does not automatically restrict the user's permissions to read-only.
+
+When a user assumes a role, their permissions are determined by the policies attached 
+to the role, not by their original permissions. However, the role's policies only add
+or extend the permissions of the user; they do not restrict or remove any existing 
+permissions the user already has.
