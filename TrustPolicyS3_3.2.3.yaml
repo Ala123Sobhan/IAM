@@ -11,8 +11,7 @@ Resources:
               AWS: arn:aws:iam::199055471403:user/ala123sobhan
             Action: sts:AssumeRole
       ManagedPolicyArns:
-        - arn:aws:iam::aws:policy/ReadOnlyAccess
-        
+        - arn:aws:iam::aws:policy/AmazonS3FullAccess
 
 Outputs:
   myrole101:

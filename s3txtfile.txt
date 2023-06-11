@@ -1,0 +1,10 @@
+Inline policies are attached directly to IAM entities and are managed within them, 
+while customer managed policies are standalone resources that can be shared 
+and attached to multiple entities.
+
+Customer managed policies provide more flexibility and reusability 
+compared to inline policies.
+
+AWS managed policies are predefined by AWS and are shared 
+across accounts, offering commonly needed permissions without
+the need for customization.
