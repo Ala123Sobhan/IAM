@@ -16,5 +16,12 @@ aws s3api create-bucket --bucket hobena --region us-west-2
 aws configure list-profiles
 
 aws s3 ls s3://your-bucket-name
+aws sts get-caller-identity
+aws s3api list-buckets --profile temp
+
+aws s3api put-object --bucket arn:aws:s3:::your-bucket --key object-key --body /path/to/file.ext
+aws iam list-attached-user-policies --user-name <user-name>
+aws s3api list-objects --bucket iambucket4015 --prefix lebowski --profile ala
+
 
 
